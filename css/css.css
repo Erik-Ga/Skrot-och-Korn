@@ -1,0 +1,25 @@
+body
+{
+    background-image: url("../images/happyseal.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(90, 138, 228);
+    text-align: center;
+    text-decoration: solid;
+    text-decoration: double;
+    font-weight: 900;
+}
+header
+{
+    background-image: url("../images/skrot.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100px;
+}
+.film
+{
+    background-image: url("../images/film.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}

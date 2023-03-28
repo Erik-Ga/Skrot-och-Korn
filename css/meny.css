@@ -1,0 +1,18 @@
+
+.navigation li{
+    display: inline;
+}
+
+.navigation a
+{
+    display:inline-block;
+    padding: 1em;
+    color: red;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(166, 182, 235, 0.9);
+
+}
+.navigation a:hover{
+    background-color: rgba(235, 166, 166, 0.9);;
+}

@@ -8,48 +8,65 @@
     <link rel="stylesheet" href="css/css.css">
     <link rel="stylesheet" href="css/table.css">
 </head>
-<body background="images/kontor.jpg">
-    <h1><strong>Produktsida</strong></h1>
-    <header>
-        <iframe src="navigation.html" width="800" height="150" style="border: none"></iframe>
-    </header>
-    <div>
-        <table border="5" class="table" align="center">
-            <tr>
-                <th>Produkt</th>
-                <th>Pris</th>
-                <th>Pris utan moms</th>
-                <th>Hästkrafter</th>
-                <th>Lastvikt</th>
-                <th>Bild</th>
-            </tr>
-            <tr>
-                <td>Skrot</td>
-                <td>50kr</td>
-                <td style="text-align: center">40kr</td>
-                <td>100 hästar</td>
-                <td>50kg</td>
-                <td><img src="images/skrot.jpg" height="50"/></td>
-            </tr>
-            <tr>
-                <td>Korn</td>
-                <td>10kr</td>
-                <td style="text-align: center">4kr</td>
-                <td>50 hästar</td>
-                <td>10kg</td>
-                <td><img src="images/korn.jpg" height="50"/></td>
-            </tr>
-            <tr>
-                <td>Cocaine</td>
-                <td>10000kr</td>
-                <td style="text-align: center">999kr</td>
-                <td>500 hästar</td>
-                <td>100kg</td>
-                <td><img src="images/cocaine.jpg" height="50"/></td>
-            </tr>
-        </table>
+<body>
+
+    <div class="grid">
+        <header>
+            <h1><strong>Produktsida<img src="images/seal.png" width="100px" height="50px"></strong></h1>
+            <div class="search">
+                <input type="text" placeholder="Search..">
+            </div>
+        </header>
+
+        <nav class="sidebar-left">
+            <header>
+                <iframe src="navigation.html" width="100%" height="500%"; style="border: none"></iframe>
+            </header>
+        </nav>
+        <main>
+            <br>
+            <div class="gridtable">
+                <div class="divgrid">Produkt</div>
+                <div class="divgrid">Pris</div>
+                <div class="divgrid">Pris utan moms</div>
+                <div class="divgrid">Hästkrafter</div>
+                <div class="divgrid">Lastvikt</div>
+                <div class="divgrid">Bild</div>
+            </div>
+            <div class="gridtable">
+                <div class="divgrid">Skrot</div>
+                <div class="divgrid">50kr</div>
+                <div class="divgrid">40kr</div>
+                <div class="divgrid">100 hästar</div>
+                <div class="divgrid">50kg</div>
+                <div class="divgrid"><img src="images/skrot.jpg" width="100px" height="50px"></div>
+            </div>
+            <div class="gridtable">
+                <div class="divgrid">Korn</div>
+                <div class="divgrid">10kr</div>
+                <div class="divgrid">4kr</div>
+                <div class="divgrid">50 hästar</div>
+                <div class="divgrid">10kg</div>
+                <div class="divgrid"><img src="images/korn.jpg" width="100px" height="50px"></div>
+            </div>
+            <div class="gridtable">
+                <div class="divgrid">Cocaine</div>
+                <div class="divgrid">10000kr</div>
+                <div class="divgrid">999kr</div>
+                <div class="divgrid">500 hästar</div>
+                <div class="divgrid">100kg</div>
+                <div class="divgrid"><img src="images/cocaine.jpg" width="100px" height="50px"></div>
+            </div>
+            <p>Här ser du alla våra härliga produkter av utmärkt kvalité (testat personligen av oss själva!)</p>
+        </main>
+
+        <aside class="sidebar-right">
+            
+        </aside>
+
+        <footer>
+            <iframe src="copy.html" width="350" height="315" style="border: none"></iframe>
+        </footer>
     </div>
-    
-    <iframe src="copy.html" width="350" height="315" style="border: none"></iframe>
 </body>
 </html>

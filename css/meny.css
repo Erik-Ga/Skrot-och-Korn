@@ -7,11 +7,13 @@
 .navigation a
 {
     display:inline-block;
-    padding: 1em;
+    padding: 0.5em;
+    margin: 1px;
     color: red;
     text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgba(166, 182, 235, 0.9);
+    text-align: center;
 
 }
 .navigation a:hover

@@ -7,64 +7,82 @@
     <title>Kontaktformulär</title>
     <link rel="stylesheet" href="css/css.css">
 </head>
-<body background="images/gangsta4.jpg">
-    <h1>Kontaktformulär</h1>
-    <header>
-        <iframe src="navigation.html" width="800" height="150" style="border: none"></iframe>
-    </header>
-    <div>
-        <h2>Fyll i din information:</h2>
-        <form action="http://primat.se/services/sendform.aspx?xid=contactinfo&xmail=micke@abc.com" method="post">
+<body>
+    <div class="grid">
+        <header>
+            <h1>Kontaktformulär<img src="images/seal.png" width="100px" height="50px"></h1>
+            <div class="search">
+                <input type="text" placeholder="Search..">
+            </div>
+        </header>
 
-            <label for="name">Namn:&nbsp;&nbsp;&nbsp;</label>
-            <input type="text" id="name" name="name"> <br> <br>
-    
-            <label for="adress">Adress:&nbsp;&nbsp;</label>
-            <input type="text" id="adress" name="adress"> <br> <br>
-    
-            <label for="name">Email:&nbsp;&nbsp;&nbsp;</label>
-            <input type="text" id="email" name="email"> <br> <br>
-    
-            <label for="name">Tel: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-            <input type="text" id="phonenr" name="phonenr"> <br>
-    
-            <p>Privat eller företag:</p>
-    
-            <input type="radio" name="type" id="private" value="private">
-            <label for="private">Privat</label><br>
-    
-            <input type="radio" name="type" id="business" value="business">
-            <label for="business">Företag</label><br>
-    
-            <p>Välj storlek av företag:</p>
-    
-            <input type="radio" name="size" id="small" value="small">
-            <label for="small">1-100 anställda</label><br>
-    
-            <input type="radio" name="size" id="medium" value="medium">
-            <label for="medium">101-1000 anställda</label><br> 
-    
-            <input type="radio" name="size" id="big" value="big">
-            <label for="big">Mer än 1000 anställda</label> <br>
-    
-            <br>
-            <label for="info">Frågor till oss:</label> <br>
-            <textarea id="info" rows="5" cols="80" name="info"></textarea>
-    
-            <br>
-            <input type="hidden" name="newsletter" value="nej">
-            <input type="checkbox" id="newsletter" name="newsletter" value="ja">
-            <label for="newsletter">Vill du ha nyhetsbrev</label> <br>
-    
-            <input type="hidden" name="contactphone" value="nej">
-            <input type="checkbox" id="contactphone" name="contactphone" value="ja">
-            <label for="contactphone">Vill du bli kontaktad via telefon</label>
-    
-            <br><br>
-            <input type="submit" value="Skicka in">
-        </form>
+        <nav class="sidebar-left">
+            <header>
+                <iframe src="navigation.html" width="100%" height="500%"; style="border: none"></iframe>
+            </header>
+        </nav>
+        <main>
+            <div>
+                <h2>Fyll i din information:</h2>
+                <form action="http://primat.se/services/sendform.aspx?xid=contactinfo&xmail=micke@abc.com" method="post">
+        
+                    <label for="name">Namn:&nbsp;&nbsp;&nbsp;</label>
+                    <input type="text" id="name" name="name"> <br> <br>
+            
+                    <label for="adress">Adress:&nbsp;&nbsp;</label>
+                    <input type="text" id="adress" name="adress"> <br> <br>
+            
+                    <label for="name">Email:&nbsp;&nbsp;&nbsp;</label>
+                    <input type="text" id="email" name="email"> <br> <br>
+            
+                    <label for="name">Tel: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="text" id="phonenr" name="phonenr"> <br>
+            
+                    <p>Privat eller företag:</p>
+            
+                    <input type="radio" name="type" id="private" value="private">
+                    <label for="private">Privat</label><br>
+            
+                    <input type="radio" name="type" id="business" value="business">
+                    <label for="business">Företag</label><br>
+            
+                    <p>Välj storlek av företag:</p>
+            
+                    <input type="radio" name="size" id="small" value="small">
+                    <label for="small">1-100 anställda</label><br>
+            
+                    <input type="radio" name="size" id="medium" value="medium">
+                    <label for="medium">101-1000 anställda</label><br> 
+            
+                    <input type="radio" name="size" id="big" value="big">
+                    <label for="big">Mer än 1000 anställda</label> <br>
+            
+                    <br>
+                    <label for="info">Frågor till oss:</label> <br>
+                    <textarea id="info" rows="5" cols="80" name="info"></textarea>
+            
+                    <br>
+                    <input type="hidden" name="newsletter" value="nej">
+                    <input type="checkbox" id="newsletter" name="newsletter" value="ja">
+                    <label for="newsletter">Vill du ha nyhetsbrev</label> <br>
+            
+                    <input type="hidden" name="contactphone" value="nej">
+                    <input type="checkbox" id="contactphone" name="contactphone" value="ja">
+                    <label for="contactphone">Vill du bli kontaktad via telefon</label>
+            
+                    <br><br>
+                    <input type="submit" value="Skicka in">
+                </form>
+            </div>
+        </main>
+
+        <aside class="sidebar-right">
+            
+        </aside>
+
+        <footer>
+            <iframe src="copy.html" width="350" height="315" style="border: none"></iframe>
+        </footer>
     </div>
-
-    <iframe src="copy.html" width="350" height="315" style="border: none"></iframe>
 </body>
 </html>

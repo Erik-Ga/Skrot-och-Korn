@@ -1,24 +1,89 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+.grid{
+    display: grid;
+    text-align: center;
+    grid-template-columns: 17vw auto 17vw;
+    grid-gap: 0.2em;
+}
 body
 {
-    background-image: url("../images/happyseal.jpg");
+    background-image: url("../images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    color: rgb(90, 138, 228);
-    text-align: center;
-    text-decoration: solid;
-    text-decoration: double;
-    font-weight: 900;
+    color: rgb(17, 59, 138);
+    font-size:x-large;
 }
-header
+.navbody
 {
-    background-image: url("../images/skrot.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100px;
+    background-image:none;
 }
-.film
-{
-    background-image: url("../images/film.jpg");
+
+header, footer{
+    grid-column: 1 / span 3;
+    height: 15vh;
+    background-image: url("../images/background2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    justify-content: center;
+}
+nav, main, aside{
+    height: 125vh;
+    width: auto;
+}
+
+@media(max-width: 600px)
+{
+    nav, main, aside
+    {
+        grid-column: 1 / span 3;
+    }
+}
+
+.myflex-container {
+    display: flex;
+    flex-direction: column;
+    background-color: darkcyan;
+}
+main
+{
+    background-image: url("../images/background3.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sidebar-left
+{
+    background-image: url("../images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+aside
+{
+    background-image: url("../images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.search
+{
+    top: 6vh;
+    right: 20vh;
+    width: 5%;
+    display: flex;
+    position: absolute;
+    font-size: larger;
+}
+.bild{
+    height: 25%;
+    width: 25%;
+    margin: 1em
+}
+
+.floating{
+    float: left;
 }

@@ -1,12 +1,12 @@
 
 .navigation li
 {
-    display: inline;
+    display: block;
 }
 
 .navigation a
 {
-    display:inline-block;
+    display:grid;
     padding: 0.5em;
     margin: 1px;
     color: red;

@@ -7,6 +7,7 @@
     <title>Produkter</title>
     <link rel="stylesheet" href="css/css.css">
     <link rel="stylesheet" href="css/table.css">
+    <script src="script/scriptproducts.js"></script>
 </head>
 <body>
 
@@ -19,11 +20,11 @@
         </header>
 
         <nav class="sidebar-left">
-            <header>
-                <iframe src="navigation.html" height="300px"; style="border: none"></iframe>
-            </header>
+            <ul id="menyn" class="globalnav"></ul>
+            <script src="script/script.js"></script>
         </nav>
         <main>
+            <p>Här ser du alla våra härliga produkter av utmärkt kvalité (testat personligen av oss själva!) 😂</p>
             <br>
             <div class="gridtable">
                 <div class="divgrid">Produkt</div>
@@ -32,6 +33,7 @@
                 <div class="divgrid">Hästkrafter</div>
                 <div class="divgrid">Lastvikt</div>
                 <div class="divgrid">Bild</div>
+                <div class="divgrid">Köp</div>
             </div>
             <div class="gridtable">
                 <div class="divgrid">Skrot</div>
@@ -40,6 +42,7 @@
                 <div class="divgrid">100 hästar</div>
                 <div class="divgrid">50kg</div>
                 <div class="divgrid"><img src="images/skrot.jpg" width="100px" height="50px"></div>
+                <div class="divgrid"><input type='checkbox' class="input-x" value='50' data-price='40'></div>
             </div>
             <div class="gridtable">
                 <div class="divgrid">Korn</div>
@@ -48,6 +51,7 @@
                 <div class="divgrid">50 hästar</div>
                 <div class="divgrid">10kg</div>
                 <div class="divgrid"><img src="images/korn.jpg" width="100px" height="50px"></div>
+                <div class="divgrid"><input type='checkbox' class="input-x" value='10' data-price='4'></div>
             </div>
             <div class="gridtable">
                 <div class="divgrid">Cocaine</div>
@@ -56,8 +60,15 @@
                 <div class="divgrid">500 hästar</div>
                 <div class="divgrid">100kg</div>
                 <div class="divgrid"><img src="images/cocaine.jpg" width="100px" height="50px"></div>
+                <div class="divgrid"><input type='checkbox' class="input-x" value='10000' data-price='999'></div>
             </div>
-            <p>Här ser du alla våra härliga produkter av utmärkt kvalité (testat personligen av oss själva!)</p>
+
+            <section id="checkCost">
+                Total:
+                <input id="total" type="text" name="total" size="10" readonly>
+            </section>
+
+            <input type="submit" value="Köp">
         </main>
 
         <aside class="sidebar-right">

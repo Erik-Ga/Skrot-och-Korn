@@ -9,7 +9,7 @@
 {
     display: grid;
     text-align: center;
-    grid-template-columns: 16% 16% 16% 16% 16% 16%;
+    grid-template-columns: 13.6% 13.6% 13.6% 13.6% 13.6% 13.6% 13.6%;
     grid-gap: 0.42em;
     text-align: center;
 }

@@ -32,6 +32,7 @@ header, footer{
     background-repeat: no-repeat;
     background-size: cover;
     justify-content: center;
+    position: static;
 }
 nav, main, aside{
     height: 125vh;
@@ -71,9 +72,9 @@ aside
 }
 .search
 {
+    display: flex;
     top: 6vh;
     right: 20vh;
-    display: flex;
     position: absolute;
     font-size: larger;
 }
@@ -85,4 +86,44 @@ aside
 
 .floating{
     float: left;
+}
+.globalnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    border: 1px solid #555;
+    text-align: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.globalnav a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.globalnav  {
+    text-align: center;
+    border-bottom: 1px solid #555;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.globalnav :last-child {
+    border-bottom: none;
+}
+
+.globalnav  a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.globalnav  a:hover:not(.active) {
+    background-color: #555;
+    color: white;
 }

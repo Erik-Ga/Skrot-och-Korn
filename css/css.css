@@ -7,6 +7,7 @@ html,body
     overflow-x: hidden;
 }
 .grid{
+    color: rgb(255, 0, 128);
     display: grid;
     text-align: center;
     grid-template-columns: 17vw auto 17vw;
@@ -14,7 +15,7 @@ html,body
 }
 body
 {
-    background-image: url("../images/background.jpg");
+    background-image: url("../images/pink.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     color: rgb(17, 59, 138);
@@ -35,7 +36,7 @@ header, footer{
     position: static;
 }
 nav, main, aside{
-    height: 125vh;
+    height: 100%;
     width: auto;
 }
 
@@ -111,6 +112,7 @@ aside
     border-bottom: 1px solid #555;
     text-align: center;
     justify-content: center;
+    background-color: pink;
     width: 100%;
 }
 
@@ -126,4 +128,84 @@ aside
 .globalnav  a:hover:not(.active) {
     background-color: #555;
     color: white;
+}
+
+.card img
+{
+    height: 200px;
+    max-width: 200px;
+}
+.personal
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../images/banner.jpg");
+}
+
+.card
+{
+    position: relative;
+    background-color: pink;
+    width: 8.66em;
+    margin: 2vw;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 3px solid black;
+    padding: 4px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.name
+{
+    color: red;
+    font-size: 32px;
+}
+
+.card img
+{
+    border: hotpink;
+    border-style:outset;
+    border-width: 5px;
+}
+.card .location
+{
+    text-align: left;
+    padding: 0.5em;
+    padding-bottom: 3em;
+}
+
+.card input
+{
+    background-color: hotpink;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 12px;
+}
+
+.card input:hover
+{
+    opacity: 0.7;
+}
+
+@media (max-width: 1024px)
+{
+    .personal
+    {
+        flex-direction: column;
+    }
+    .card
+    {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 1em;
+    }
 }
